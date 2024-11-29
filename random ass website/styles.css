@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #d1d5db;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+    color: #f3f4f6;
+  }
+  
+  .theme-toggle-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #f3f4f6;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle-button:hover {
+    color: #4f46e5;
+  }
+  
+  /* Wave Animation */
+  .wave-container {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+  }
+  
+  .about, .projects, .achievements, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .about h2, .projects h2, .achievements h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f3f4f6;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li a {
+    color: #4f46e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #8b5cf6;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4f46e5;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #f3f4f6;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input:focus, form textarea:focus {
+    background-color: #2e2e2e;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #4f46e5;
+    color: #f3f4f6;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #3b3abf;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4f46e5;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #3b3abf;
+  }
+  
+  /* Fade-in effect for sections */
+  .about, .projects, .achievements, .contact {
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Light Mode Styles */
+  body.light-mode {
+    background-color: #e1e1e6;
+    color: #121212;
+  }
+  
+  body.light-mode header {
+    background-color: #f3f4f6;
+  }
+  
+  body.light-mode .theme-toggle-button {
+    color: #121212;
+  }
+  
+  body.light-mode .theme-toggle-button:hover {
+    color: #4f46e5;
+  }
+  
+  body.light-mode .wave-container {
+    background-color: #e0e0e0;
+  }
+  
+  body.light-mode form input,
+  body.light-mode form textarea {
+    background-color: #f9fafb;
+    color: #121212;
+  }
+  
+  body.light-mode form button {
+    background-color: #4f46e5;
+  }
+  
+  body.light-mode form button:hover {
+    background-color: #3b3abf;
+  }
+  
+  /* Achievements Section */
+  .achievements ul {
+    font-size: 1.1rem;
+    color: #f3f4f6;
+  }
+  
+  .achievements ul li {
+    margin: 10px 0;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .achievements ul li:hover {
+    color: #4f46e5;
+  }
+  
+  /* More Elegant Inputs */
+  form input, form textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect on Links */
+  ul li a {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease;
+  }
+  
+  ul li a:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #f3f4f6;
+    font-size: 0.9rem;
+  }
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #e1e1e6; /* Light background */
+    color: #121212; /* Dark text color */
+  }
+  
+  body.light-mode header {
+    background-color: #f3f4f6; /* Light header background */
+  }
+  
+  body.light-mode .theme-toggle-button {
+    color: #121212; /* Dark color for the toggle button */
+  }
+  
+  body.light-mode .theme-toggle-button:hover {
+    color: #4f46e5; /* Highlight color on hover */
+  }
+  
+  body.light-mode .wave-container {
+    background-color: #e0e0e0; /* Lighter wave background */
+  }
+  
+  body.light-mode form input,
+  body.light-mode form textarea {
+    background-color: #f9fafb; /* Light input fields */
+    color: #121212; /* Dark text inside input fields */
+  }
+  
+  body.light-mode form button {
+    background-color: #4f46e5; /* Button stays blue */
+  }
+  
+  body.light-mode form button:hover {
+    background-color: #3b3abf; /* Darker blue when hovered */
+  }
+  
+  body.light-mode h1, 
+  body.light-mode h2 {
+    color: #121212; /* Dark text for headers */
+  }
+  
+  body.light-mode .projects a {
+    color: #4f46e5; /* Link color */
+  }
+  
+  body.light-mode .projects a:hover {
+    color: #8b5cf6; /* Hover color for links */
+  }
+  
+  body.light-mode footer {
+    color: #121212; /* Dark footer text */
+  }
+  
+  /* Scroll to Top Button for Light Mode */
+  body.light-mode .scroll-to-top {
+    background-color: #4f46e5;
+    color: white;
+  }
+  
+  body.light-mode .scroll-to-top:hover {
+    background-color: #3b3abf;
+  }
+    
